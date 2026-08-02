@@ -1,0 +1,27 @@
+{
+  "_": "Паспорт самого департамента (ст. 44). Департамент проходит свой закон первым.",
+  "project": "hands",
+  "globs": [
+    "bin/**/*.py"
+  ],
+  "ignore": [
+    "node_modules/"
+  ],
+  "zones": {
+    "forbidden": [
+      "**/.github/workflows/**"
+    ],
+    "caution": []
+  },
+  "invariants": [
+    "exports",
+    "hosts",
+    "env"
+  ],
+  "mode": "строго",
+  "specimen": [
+    "bin/diagnose.py",
+    "bin/hands.py"
+  ],
+  "_specimen": "ЗКН-Х005. Поимённо: диагност несёт определения правил, суд несёт фикстуры нарушений. Глоб здесь запрещён."
+}

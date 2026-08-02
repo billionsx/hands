@@ -1,0 +1,40 @@
+name: hands-watch-reusable
+# ПОДКЛЮЧЕНИЕ КЛИЕНТА (ст. 41). Клиент вызывает этот воркфлоу восемью строками;
+# паспорт живёт у департамента, имя клиента нигде больше не встречается.
+#
+# Режим по умолчанию — ДОКЛАД (ст. 42). Рука включается только когда долг
+# закона равен нулю и отработан испытательный срок.
+
+on:
+  workflow_call:
+    inputs:
+      passport: { required: true, type: string }
+      apply:    { required: false, type: boolean, default: false }
+
+permissions:
+  contents: read
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: забрать клиента
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with: { path: client }
+
+      - name: забрать департамент
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with: { repository: billionsx/hands, path: dept }
+
+      - name: СУД (красный запрещает руке всё)
+        run: cd dept && python3 bin/hands.py selftest
+
+      - name: ОБХОД
+        run: |
+          cd dept
+          python3 bin/hand.py ../client "adapters/${{ inputs.passport }}.json" \
+            ${{ inputs.apply && '--apply' || '' }} | tee ../ОТЧЁТ.md
+
+      - name: отчёт
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with: { name: hands-report, path: ОТЧЁТ.md }

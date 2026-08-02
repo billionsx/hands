@@ -22,7 +22,8 @@
       "ceiling": "К1",
       "probation": true,
       "check": "dep_advisory_patch",
-      "source": "osv.dev + github advisory database"
+      "source": "osv.dev + github advisory database",
+      "hole": "🕳 идёт разведкой (bin/intake.py), в офлайн-диагносте не строится"
     },
     "ЗКН-Х103": {
       "article": 8,
@@ -32,7 +33,8 @@
       "ceiling": "К2",
       "probation": true,
       "check": "dep_advisory_major",
-      "source": "osv.dev"
+      "source": "osv.dev",
+      "hole": "🕳 идёт разведкой (bin/intake.py), в офлайн-диагносте не строится"
     },
     "ЗКН-Х104": {
       "article": 9,
@@ -42,7 +44,8 @@
       "ceiling": "К2",
       "probation": true,
       "check": "dep_abandoned",
-      "source": "npm registry + repo archived flag"
+      "source": "npm registry + repo archived flag",
+      "hole": "🕳 требует опроса реестра пакетов — проверка не построена"
     },
     "ЗКН-Х105": {
       "article": 10,
@@ -82,7 +85,8 @@
       "ceiling": "К3",
       "probation": false,
       "check": "route_guard",
-      "source": "cwe:862"
+      "source": "cwe:862",
+      "hole": "🕳 требует модели ролей проекта — проверка не построена"
     },
     "ЗКН-Х109": {
       "article": 13,
@@ -93,7 +97,8 @@
       "probation": false,
       "check": "sql_drift",
       "source": "инвариант sql",
-      "note": "Необратимость миграции — не риск, а свойство. Рука не касается."
+      "note": "Необратимость миграции — не риск, а свойство. Рука не касается.",
+      "hole": "🕳 идёт инвариантом sql, отдельная проверка не построена"
     },
     "ЗКН-Х110": {
       "article": 14,
@@ -104,7 +109,8 @@
       "probation": true,
       "check": "orphan_module",
       "source": "граф импортов",
-      "note": "Никогда не автомат: динамическая ссылка не видна статически (ЗКН-Х003)."
+      "note": "Никогда не автомат: динамическая ссылка не видна статически (ЗКН-Х003).",
+      "hole": "🕳 требует полного графа импортов с динамическими ссылками — не построен"
     },
     "ЗКН-Х111": {
       "article": 18,
@@ -129,12 +135,13 @@
     "ЗКН-Х113": {
       "article": 20,
       "domain": "ошибки",
-      "title": "Пустой перехват исключения",
+      "title": "Перехват молчит без объяснения",
       "kind": "additive",
       "ceiling": "К1",
       "probation": true,
       "check": "empty_catch",
-      "source": "cwe:390"
+      "source": "cwe:390",
+      "note": "Молчание, объяснённое комментарием, — принятое решение и не нарушение. Родословная: 02.08.2026, живой обход клиента показал 179 «пустых» перехватов, часть которых несла объяснение."
     },
     "ЗКН-Х114": {
       "article": 21,
