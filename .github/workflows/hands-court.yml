@@ -1,0 +1,27 @@
+name: hands-court
+# СУД (раздел VII). Красный суд запрещает руке всё.
+# Действия закреплены по sha — департамент проходит собственный ЗКН-Х114 (ст. 44).
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  court:
+    runs-on: ubuntu-latest
+    steps:
+      - name: забрать департамент
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: объявить инструменты суда
+        run: |
+          python3 --version
+          echo "органы суда идут на stdlib — сторонних зависимостей нет"
+
+      - name: СУД
+        run: python3 bin/hands.py selftest

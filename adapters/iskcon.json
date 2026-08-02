@@ -1,0 +1,42 @@
+{
+  "_": "Паспорт клиента (ст. 41). Имя клиента не встречается нигде, кроме этого файла.",
+  "project": "iskcon",
+  "repo": "billionsx/iskcon",
+  "root": ".",
+  "globs": [
+    "apps/web/src/**/*.ts", "apps/web/src/**/*.tsx",
+    "apps/web/*.ts", "apps/api/**/*.ts", "apps/gcal/**/*.ts",
+    "scripts/**/*.ts", "tools/**/*.ts"
+  ],
+  "ignore": ["node_modules/", "^build/", "^data/", "\\.min\\.", "tsbuildinfo", "^\\.[a-z-]+-ingest/"],
+  "package_manifests": ["package.json", "apps/web/package.json"],
+
+  "zones": {
+    "forbidden": [
+      "**/*.sql", "**/migrations/**", "**/schema/**",
+      "**/wrangler.toml", "**/worker.ts", "**/worker*.ts",
+      "**/auth/**", "**/Account*.tsx", "**/Donate*.tsx",
+      "**/.github/workflows/**", "**/*.env*", "**/secrets/**"
+    ],
+    "caution": ["apps/api/**", "apps/gcal/**", "**/vite.config.ts", "**/loader/**"]
+  },
+
+  "invariants": ["routes", "exports", "sql", "hosts", "env", "deps"],
+  "bundle_tolerance_pct": 5,
+
+  "radius": {
+    "max_commits_per_day": 3,
+    "max_files_per_commit": 4,
+    "one_law_per_commit": true
+  },
+
+  "window": {
+    "after": "green_deploy",
+    "blackout_cron": "0 0 * * 0",
+    "note": "Рука пишет только после зелёного деплоя и вне окна поставки (ст. 31)."
+  },
+
+  "license": "proprietary",
+  "mode": "доклад",
+  "_mode_note": "Новый проект начинает целиком в докладе (ст. 42). Перевод закона в исполнение — только при нулевом долге и отработанном испытательном сроке."
+}

@@ -1,0 +1,22 @@
+{
+  "_": "Источники экспертизы департамента (ст. 25). Источник без разбора машиной не вербуется: страница, за которой нет структуры, источником не является.",
+  "ecosystems": ["npm", "pip", "actions"],
+  "vulnerabilities": [
+    {"name": "GitHub Advisory Database", "url": "https://api.github.com/advisories", "format": "json", "freq": "сутки"},
+    {"name": "OSV.dev", "url": "https://api.osv.dev/v1/querybatch", "format": "json", "freq": "сутки"},
+    {"name": "NVD CVE 2.0", "url": "https://services.nvd.nist.gov/rest/json/cves/2.0", "format": "json", "freq": "сутки"}
+  ],
+  "rules": [
+    {"name": "eslint", "url": "https://api.github.com/repos/eslint/eslint/releases?per_page=3", "take": 3},
+    {"name": "typescript-eslint", "url": "https://api.github.com/repos/typescript-eslint/typescript-eslint/releases?per_page=3", "take": 3},
+    {"name": "openssf-scorecard", "url": "https://api.github.com/repos/ossf/scorecard/releases?per_page=2", "take": 2},
+    {"name": "semgrep", "url": "https://api.github.com/repos/semgrep/semgrep/releases?per_page=2", "take": 2},
+    {"name": "typescript", "url": "https://api.github.com/repos/microsoft/TypeScript/releases?per_page=2", "take": 2},
+    {"name": "vite", "url": "https://api.github.com/repos/vitejs/vite/releases?per_page=2", "take": 2},
+    {"name": "react", "url": "https://api.github.com/repos/facebook/react/releases?per_page=2", "take": 2}
+  ],
+  "холодные": [
+    {"name": "CWE Top 25", "url": "https://cwe.mitre.org/top25/", "freq": "год", "hole": "🕳 разбор не построен"},
+    {"name": "OWASP ASVS", "url": "https://github.com/OWASP/ASVS", "freq": "квартал", "hole": "🕳 разбор не построен"}
+  ]
+}

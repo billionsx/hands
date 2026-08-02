@@ -1,0 +1,51 @@
+name: hands-intake
+# РАЗВЕДКА (раздел IV). Суточный обход источников экспертизы.
+#
+# Приносит ИЗМЕНЕНИЯ, а не объёмы. Производит КАНДИДАТОВ, а не законы (ст. 26):
+# кандидат становится законом только получив исполнимую проверку и тест в обе
+# стороны. Чего проверить не умеем — остаётся дырой 🕳 с адресом источника.
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: СУД перед разведкой
+        run: python3 bin/hands.py selftest
+
+      - name: обход источников
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 bin/intake.py . 1
+
+      - name: запись в хронику
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, datetime
+          s = json.loads(pathlib.Path("registry/state/intake.json").read_text(encoding="utf-8"))
+          ch = pathlib.Path("registry/state/CHANGELOG.md")
+          ch.parent.mkdir(parents=True, exist_ok=True)
+          line = (f"- {s['снято']} · разведка · советов {s['советов_просмотрено']}"
+                  f" · находок {len(s['находок_по_зависимостям'])}"
+                  f" · кандидатов {len(s['кандидаты_в_законы'])}"
+                  f" · сверка {s['расхождение_источников']}\n")
+          prev = ch.read_text(encoding="utf-8") if ch.exists() else "# ХРОНИКА BXH\n\nТолько вперёд. Правка задним числом запрещена (ст. 4).\n\n"
+          ch.write_text(prev + line, encoding="utf-8")
+          PY
+
+      - name: положить
+        run: |
+          git config user.name "BXH"
+          git config user.email "hands@billionsx"
+          git add registry/
+          git diff --staged --quiet || git commit -m "разведка: суточный обход источников"
+          git push

@@ -1,0 +1,160 @@
+{
+  "_": "Свод департамента BXH. Закон существует, только если у него есть исполнимая проверка и тест в обе стороны (ст. 26). Все новые законы входят с probation=true (ст. 32): право писать зарабатывается.",
+  "редакция": 1,
+  "дата": "2026-08-02",
+  "laws": {
+    "ЗКН-Х101": {
+      "article": 7,
+      "domain": "секреты",
+      "title": "Секрет в исходниках",
+      "kind": "report",
+      "ceiling": "К3",
+      "probation": false,
+      "check": "secret_scan",
+      "source": "ghsa:secret-scanning-patterns",
+      "note": "Вечно К3. Удаление секрета из кода не отзывает секрет — оно создаёт ложное спокойствие. Департамент докладывает и требует ротации."
+    },
+    "ЗКН-Х102": {
+      "article": 8,
+      "domain": "уязвимости",
+      "title": "Зависимость с известной уязвимостью, патч-подъём",
+      "kind": "additive",
+      "ceiling": "К1",
+      "probation": true,
+      "check": "dep_advisory_patch",
+      "source": "osv.dev + github advisory database"
+    },
+    "ЗКН-Х103": {
+      "article": 8,
+      "domain": "уязвимости",
+      "title": "Зависимость с уязвимостью, мажорный подъём",
+      "kind": "semantic",
+      "ceiling": "К2",
+      "probation": true,
+      "check": "dep_advisory_major",
+      "source": "osv.dev"
+    },
+    "ЗКН-Х104": {
+      "article": 9,
+      "domain": "зависимости",
+      "title": "Заброшенная зависимость",
+      "kind": "report",
+      "ceiling": "К2",
+      "probation": true,
+      "check": "dep_abandoned",
+      "source": "npm registry + repo archived flag"
+    },
+    "ЗКН-Х105": {
+      "article": 10,
+      "domain": "инъекция",
+      "title": "Конкатенация переменной в SQL",
+      "kind": "semantic",
+      "ceiling": "К2",
+      "probation": true,
+      "check": "sql_concat",
+      "source": "cwe:89"
+    },
+    "ЗКН-Х106": {
+      "article": 10,
+      "domain": "инъекция",
+      "title": "Разметка из переменной без экранирования",
+      "kind": "semantic",
+      "ceiling": "К2",
+      "probation": true,
+      "check": "raw_html",
+      "source": "cwe:79"
+    },
+    "ЗКН-Х107": {
+      "article": 11,
+      "domain": "сеть",
+      "title": "Хост исхода вне объявленной границы",
+      "kind": "report",
+      "ceiling": "К3",
+      "probation": false,
+      "check": "egress_host",
+      "source": "инвариант hosts"
+    },
+    "ЗКН-Х108": {
+      "article": 12,
+      "domain": "доступ",
+      "title": "Маршрут без проверки роли среди соседей с проверкой",
+      "kind": "report",
+      "ceiling": "К3",
+      "probation": false,
+      "check": "route_guard",
+      "source": "cwe:862"
+    },
+    "ЗКН-Х109": {
+      "article": 13,
+      "domain": "схема",
+      "title": "Изменение схемы данных",
+      "kind": "report",
+      "ceiling": "К3",
+      "probation": false,
+      "check": "sql_drift",
+      "source": "инвариант sql",
+      "note": "Необратимость миграции — не риск, а свойство. Рука не касается."
+    },
+    "ЗКН-Х110": {
+      "article": 14,
+      "domain": "мёртвый код",
+      "title": "Модуль без входящих ссылок",
+      "kind": "deletion",
+      "ceiling": "К2",
+      "probation": true,
+      "check": "orphan_module",
+      "source": "граф импортов",
+      "note": "Никогда не автомат: динамическая ссылка не видна статически (ЗКН-Х003)."
+    },
+    "ЗКН-Х111": {
+      "article": 18,
+      "domain": "типы",
+      "title": "Подавление типовой проверки",
+      "kind": "report",
+      "ceiling": "К2",
+      "probation": true,
+      "check": "type_suppression",
+      "source": "typescript-eslint"
+    },
+    "ЗКН-Х112": {
+      "article": 19,
+      "domain": "гигиена",
+      "title": "Мёртвый импорт",
+      "kind": "ast_equal",
+      "ceiling": "К0",
+      "probation": true,
+      "check": "unused_import",
+      "source": "eslint:no-unused-vars"
+    },
+    "ЗКН-Х113": {
+      "article": 20,
+      "domain": "ошибки",
+      "title": "Пустой перехват исключения",
+      "kind": "additive",
+      "ceiling": "К1",
+      "probation": true,
+      "check": "empty_catch",
+      "source": "cwe:390"
+    },
+    "ЗКН-Х114": {
+      "article": 21,
+      "domain": "поставка",
+      "title": "Действие CI закреплено меткой, а не sha",
+      "kind": "semantic",
+      "ceiling": "К2",
+      "probation": true,
+      "check": "action_pin",
+      "source": "openssf scorecard: Pinned-Dependencies"
+    },
+    "ЗКН-Х115": {
+      "article": 21,
+      "domain": "поставка",
+      "title": "Права воркфлоу шире необходимого",
+      "kind": "semantic",
+      "ceiling": "К2",
+      "probation": true,
+      "check": "workflow_perms",
+      "source": "openssf scorecard: Token-Permissions"
+    }
+  }
+}

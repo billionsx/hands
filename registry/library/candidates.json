@@ -1,0 +1,132 @@
+{
+  "кандидаты": [
+    {
+      "source": "eslint",
+      "release": "v10.8.0",
+      "address": "https://github.com/eslint/eslint/releases/tag/v10.8.0",
+      "published": "2026-07-24T20:15:28Z",
+      "check_buildable": false,
+      "excerpt": "## Features\n* [`2fee9bb`](https://github.com/eslint/eslint/commit/2fee9bb7416116cbed4d8c8100b1ae713b6356a1) feat: export `ConfigObject` from `eslint/config` (#21082) (sethamus)\n\n## Bug Fixes\n* [`6b8d2f7`](https://github.com/eslint/eslint/commit/6b8d2f7589b8a7c8b91b8ca2a2ef6d46178760d8) fix: escape reserved characters in rule id in `html` formatter (#21129) (Francesco Trotta)\n* [`9091071`](https://github.com/eslint/eslint/commit/90910715011211a20d011d807d398a7005127f35) fix: prevent `no-unreachable-loop` crash when all loop types are ignored (#21116) (Pixel)\n* [`e23fafe`](https://github.com/esl"
+    },
+    {
+      "source": "eslint",
+      "release": "v10.7.0",
+      "address": "https://github.com/eslint/eslint/releases/tag/v10.7.0",
+      "published": "2026-07-10T21:22:56Z",
+      "check_buildable": false,
+      "excerpt": "## Features\n* [`cf2a9bf`](https://github.com/eslint/eslint/commit/cf2a9bf2d982642f760370c15f1196f4658f4e27) feat: add errorClassNames option to preserve-caught-error rule (#21032) (sethamus)\n* [`f8b873a`](https://github.com/eslint/eslint/commit/f8b873aae53610b80b5c1005606716e05ed3b91f) feat: max-nested-callbacks option for constructor callbacks (#21063) (fnx)\n* [`557fde8`](https://github.com/eslint/eslint/commit/557fde8bc633d26ea4fe287d4483f287e8e6080f) feat: support computed `Number.parseInt` member access in `radix` rule (#21041) (Pixel)\n* [`0b4a73b`](https://github.com/eslint/eslint/commit/"
+    },
+    {
+      "source": "eslint",
+      "release": "v9.39.5",
+      "address": "https://github.com/eslint/eslint/releases/tag/v9.39.5",
+      "published": "2026-07-10T20:41:58Z",
+      "check_buildable": false,
+      "excerpt": "## Bug Fixes\n* [`253be16`](https://github.com/eslint/eslint/commit/253be16a79a4c78eec4e0eb461b574d60dbf6b11) fix: handle unavailable require cache (backport of #20812 to v9.x) (#21065) (Eric)\n\n## Documentation\n* [`74930ed`](https://github.com/eslint/eslint/commit/74930edd1ce0d246819edc72705101ec271da50b) docs: switch build to Node.js 24 (#20894) (Milos Djermanovic)\n* [`eaec8bb`](https://github.com/eslint/eslint/commit/eaec8bb6b1ca4b36985ee0222c457d4730d47a20) docs: Add ESLint v9.x EOL notice (#20828) (Milos Djermanovic)\n\n## Chores\n* [`458205f`](https://github.com/eslint/eslint/commit/458205f7d"
+    },
+    {
+      "source": "typescript-eslint",
+      "release": "v8.65.0",
+      "address": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.65.0",
+      "published": "2026-07-20T17:38:21Z",
+      "check_buildable": false,
+      "excerpt": "## 8.65.0 (2026-07-20)\n\n### 🚀 Features\n\n- add warning when TS 7 is detected ([#12529](https://github.com/typescript-eslint/typescript-eslint/pull/12529))\n- **eslint-plugin:** [no-restricted-imports] deprecate extension rule ([#12527](https://github.com/typescript-eslint/typescript-eslint/pull/12527), [#19562](https://github.com/typescript-eslint/typescript-eslint/issues/19562), [#11889](https://github.com/typescript-eslint/typescript-eslint/issues/11889))\n- **eslint-plugin:** [no-shadow] specialized error on enum declaration and member shadowing ([#12578](https://github.com/typescript-eslint/t"
+    },
+    {
+      "source": "typescript-eslint",
+      "release": "v8.64.0",
+      "address": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.64.0",
+      "published": "2026-07-13T17:38:19Z",
+      "check_buildable": false,
+      "excerpt": "## 8.64.0 (2026-07-13)\n\n### 🚀 Features\n\n- support parsing `import defer` ([#12513](https://github.com/typescript-eslint/typescript-eslint/pull/12513))\n- **eslint-plugin:** [no-loop-func] support `using` / `await using` declarations and deprecate the rule ([#12500](https://github.com/typescript-eslint/typescript-eslint/pull/12500))\n- **typescript-estree:** throw for invalid definite assignment in class properties ([#12543](https://github.com/typescript-eslint/typescript-eslint/pull/12543))\n\n### 🩹 Fixes\n\n- **eslint-plugin:** [require-array-sort-compare] handle constrained arrays ([#12512](https:"
+    },
+    {
+      "source": "typescript-eslint",
+      "release": "v8.63.0",
+      "address": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.63.0",
+      "published": "2026-07-06T17:51:54Z",
+      "check_buildable": false,
+      "excerpt": "## 8.63.0 (2026-07-06)\n\n### 🚀 Features\n\n- **eslint-plugin:** [no-misused-promises] detect async usage of a sync dispose usage ([#12426](https://github.com/typescript-eslint/typescript-eslint/pull/12426))\n\n### 🩹 Fixes\n\n- **eslint-plugin:** [method-signature-style] suggest converting readonly function properties instead of emitting invalid syntax ([#12447](https://github.com/typescript-eslint/typescript-eslint/pull/12447), [#12446](https://github.com/typescript-eslint/typescript-eslint/issues/12446))\n- **eslint-plugin:** [no-unnecessary-type-assertion] handle optional-chained calls to overloaded"
+    },
+    {
+      "source": "openssf-scorecard",
+      "release": "v5.5.0",
+      "address": "https://github.com/ossf/scorecard/releases/tag/v5.5.0",
+      "published": "2026-04-23T21:41:36Z",
+      "check_buildable": false,
+      "excerpt": "## What's Changed\r\n\r\n## General\r\n* The official Scorecard docker images are hosted on GitHub Container Registry starting with v5.5.0.\r\nOlder releases will be brought over from Google Container/Artifact Registry, before being discontinued.(@spencerschrock in https://github.com/ossf/scorecard/pull/4885)\r\n* Scorecard will now skip checks that don't apply to the current repo type by @JamieMagee in https://github.com/ossf/scorecard/pull/5000.\r\nIf any checks no longer run that previously ran, and you think are supported by the underlying forge please file an issue.\r\n\r\n## Checks\r\n### Branch-Protectio"
+    },
+    {
+      "source": "openssf-scorecard",
+      "release": "v5.4.0",
+      "address": "https://github.com/ossf/scorecard/releases/tag/v5.4.0",
+      "published": "2025-11-14T17:30:58Z",
+      "check_buildable": false,
+      "excerpt": "## What's Changed\r\n\r\n## General\r\n* :sparkles: Added CLI flags to scan multiple repositories `--repos`, or an entire GitHub organization `--org` (#4793, @gabrielsoltz)\r\n\r\n## Checks\r\n### Branch-Protection\r\n* :bug: Fix branch-protection scoring so GitHub rulesets without include patterns are honored, eliminating false warnings for branches covered by those rulesets. (#4835, @trask)\r\n\r\n### Codeowners\r\n* :bug: add a codeowner expansion limit to prevent api exhaustion by @spencerschrock in https://github.com/ossf/scorecard/pull/4817\r\n\r\n### Pinned-Dependencies\r\n* :bug: add check for empty github work"
+    },
+    {
+      "source": "semgrep",
+      "release": "v1.172.0",
+      "address": "https://github.com/semgrep/semgrep/releases/tag/v1.172.0",
+      "published": "2026-07-28T22:40:28Z",
+      "check_buildable": false,
+      "excerpt": "## [1.172.0](https://github.com/semgrep/semgrep/releases/tag/v1.172.0) - 2026-07-28\n\n### ### Added\n\n- Added support for the OpenTofu `.tofu` file extension. Because OpenTofu uses the same HCL grammar as Terraform, `.tofu` files are now automatically detected and scanned as Terraform, so they are picked up by recursive scans and Terraform rulesets (e.g. `p/terraform`) with no extra configuration. (ENGINE-2884)\n\n### ### Changed\n\n- Updated the Ruby parser to tree-sitter-ruby v0.23.1, improving support for `!=`, case/when expressions with line breaks, and element references that take a block. (LAN"
+    },
+    {
+      "source": "semgrep",
+      "release": "v1.171.0",
+      "address": "https://github.com/semgrep/semgrep/releases/tag/v1.171.0",
+      "published": "2026-07-22T23:05:43Z",
+      "check_buildable": false,
+      "excerpt": "## [1.171.0](https://github.com/semgrep/semgrep/releases/tag/v1.171.0) - 2026-07-22\n\n### ### Added\n\n- Added support for the OpenTofu `.tofu` file extension. Because OpenTofu uses the same HCL grammar as Terraform, `.tofu` files are now automatically detected and scanned as Terraform, so they are picked up by recursive scans and Terraform rulesets (e.g. `p/terraform`) with no extra configuration. (ENGINE-2884)\n\n### ### Changed\n\n- The window for collecting git contributor information during `semgrep ci` has been extended from the last 30 days to the last 90 days, to match the updated usage polic"
+    },
+    {
+      "source": "typescript",
+      "release": "v6.0.3",
+      "address": "https://github.com/microsoft/TypeScript/releases/tag/v6.0.3",
+      "published": "2026-04-16T23:43:08Z",
+      "check_buildable": false,
+      "excerpt": "For release notes, check out the [release announcement blog post](https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/).\r\n\r\n* [fixed issues query for TypeScript 6.0.0 (Beta)](https://github.com/Microsoft/TypeScript/issues?utf8=%E2%9C%93&q=milestone%3A%22TypeScript+6.0.0%22).\r\n* [fixed issues query for TypeScript 6.0.1 (RC)](https://github.com/Microsoft/TypeScript/issues?utf8=%E2%9C%93&q=milestone%3A%22TypeScript+6.0.1%22).\r\n* [fixed issues query for TypeScript 6.0.2 (Stable)](https://github.com/Microsoft/TypeScript/issues?utf8=%E2%9C%93&q=milestone%3A%22TypeScript+6.0.2%22).\r\n*"
+    },
+    {
+      "source": "typescript",
+      "release": "v6.0.2",
+      "address": "https://github.com/microsoft/TypeScript/releases/tag/v6.0.2",
+      "published": "2026-03-23T16:19:11Z",
+      "check_buildable": false,
+      "excerpt": "For release notes, check out the [release announcement blog post](https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/).\r\n\r\n* [fixed issues query for TypeScript 6.0.0 (Beta)](https://github.com/Microsoft/TypeScript/issues?utf8=%E2%9C%93&q=milestone%3A%22TypeScript+6.0.0%22).\r\n* [fixed issues query for TypeScript 6.0.1 (RC)](https://github.com/Microsoft/TypeScript/issues?utf8=%E2%9C%93&q=milestone%3A%22TypeScript+6.0.1%22).\r\n* [fixed issues query for TypeScript 6.0.2 (Stable)](https://github.com/Microsoft/TypeScript/issues?utf8=%E2%9C%93&q=milestone%3A%22TypeScript+6.0.2%22).\r\n\r"
+    },
+    {
+      "source": "vite",
+      "release": "v8.2.0",
+      "address": "https://github.com/vitejs/vite/releases/tag/v8.2.0",
+      "published": "2026-07-30T12:00:47Z",
+      "check_buildable": false,
+      "excerpt": "Please refer to [CHANGELOG.md](https://github.com/vitejs/vite/blob/v8.2.0/packages/vite/CHANGELOG.md) for details."
+    },
+    {
+      "source": "vite",
+      "release": "create-vite@9.1.2",
+      "address": "https://github.com/vitejs/vite/releases/tag/create-vite%409.1.2",
+      "published": "2026-07-30T12:03:27Z",
+      "check_buildable": false,
+      "excerpt": "Please refer to [CHANGELOG.md](https://github.com/vitejs/vite/blob/create-vite@9.1.2/packages/create-vite/CHANGELOG.md) for details."
+    },
+    {
+      "source": "react",
+      "release": "v19.2.8",
+      "address": "https://github.com/react/react/releases/tag/v19.2.8",
+      "published": "2026-07-21T15:49:09Z",
+      "check_buildable": false,
+      "excerpt": "## React Server Components\r\n\r\n- Performance improvements when decoding\r\n ([#37087](https://github.com/facebook/react/pull/37087) by @eps1lon)"
+    },
+    {
+      "source": "react",
+      "release": "v19.1.9",
+      "address": "https://github.com/react/react/releases/tag/v19.1.9",
+      "published": "2026-07-21T15:48:51Z",
+      "check_buildable": false,
+      "excerpt": "## React Server Components\r\n\r\n- Performance improvements when decoding\r\n ([#37088](https://github.com/facebook/react/pull/37088) by @eps1lon)"
+    }
+  ]
+}
