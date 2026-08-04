@@ -1,5 +1,5 @@
 {
-  "снято": "2026-08-03T07:49:10+00:00",
+  "снято": "2026-08-04T06:42:32+00:00",
   "окно_суток": 1,
   "советов_просмотрено": 0,
   "зависимостей_паспорта": 0,
@@ -33,6 +33,14 @@
     },
     {
       "source": "typescript-eslint",
+      "release": "v8.66.0",
+      "address": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.66.0",
+      "published": "2026-08-03T17:34:06Z",
+      "check_buildable": false,
+      "excerpt": "## 8.66.0 (2026-08-03)\n\n### 🚀 Features\n\n- **typescript-estree:** handle import.defer() as ImportExpression ([#12609](https://github.com/typescript-eslint/typescript-eslint/pull/12609))\n\n### 🩹 Fixes\n\n- **eslint-plugin:** [no-unnecessary-type-conversion] ignore shadowed built-ins ([#12590](https://github.com/typescript-eslint/typescript-eslint/pull/12590))\n- **eslint-plugin:** [prefer-nullish-coalescing] handle shadowed Boolean calls ([#12591](https://github.com/typescript-eslint/typescript-eslint/pull/12591))\n- **eslint-plugin:** [no-useless-default-assignment] don't report defaults used by oth"
+    },
+    {
+      "source": "typescript-eslint",
       "release": "v8.65.0",
       "address": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.65.0",
       "published": "2026-07-20T17:38:21Z",
@@ -46,14 +54,6 @@
       "published": "2026-07-13T17:38:19Z",
       "check_buildable": false,
       "excerpt": "## 8.64.0 (2026-07-13)\n\n### 🚀 Features\n\n- support parsing `import defer` ([#12513](https://github.com/typescript-eslint/typescript-eslint/pull/12513))\n- **eslint-plugin:** [no-loop-func] support `using` / `await using` declarations and deprecate the rule ([#12500](https://github.com/typescript-eslint/typescript-eslint/pull/12500))\n- **typescript-estree:** throw for invalid definite assignment in class properties ([#12543](https://github.com/typescript-eslint/typescript-eslint/pull/12543))\n\n### 🩹 Fixes\n\n- **eslint-plugin:** [require-array-sort-compare] handle constrained arrays ([#12512](https:"
-    },
-    {
-      "source": "typescript-eslint",
-      "release": "v8.63.0",
-      "address": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.63.0",
-      "published": "2026-07-06T17:51:54Z",
-      "check_buildable": false,
-      "excerpt": "## 8.63.0 (2026-07-06)\n\n### 🚀 Features\n\n- **eslint-plugin:** [no-misused-promises] detect async usage of a sync dispose usage ([#12426](https://github.com/typescript-eslint/typescript-eslint/pull/12426))\n\n### 🩹 Fixes\n\n- **eslint-plugin:** [method-signature-style] suggest converting readonly function properties instead of emitting invalid syntax ([#12447](https://github.com/typescript-eslint/typescript-eslint/pull/12447), [#12446](https://github.com/typescript-eslint/typescript-eslint/issues/12446))\n- **eslint-plugin:** [no-unnecessary-type-assertion] handle optional-chained calls to overloaded"
     },
     {
       "source": "openssf-scorecard",
