@@ -135,6 +135,22 @@
       "published": "2026-08-03T17:34:06Z",
       "check_buildable": false,
       "excerpt": "## 8.66.0 (2026-08-03)\n\n### 🚀 Features\n\n- **typescript-estree:** handle import.defer() as ImportExpression ([#12609](https://github.com/typescript-eslint/typescript-eslint/pull/12609))\n\n### 🩹 Fixes\n\n- **eslint-plugin:** [no-unnecessary-type-conversion] ignore shadowed built-ins ([#12590](https://github.com/typescript-eslint/typescript-eslint/pull/12590))\n- **eslint-plugin:** [prefer-nullish-coalescing] handle shadowed Boolean calls ([#12591](https://github.com/typescript-eslint/typescript-eslint/pull/12591))\n- **eslint-plugin:** [no-useless-default-assignment] don't report defaults used by oth"
+    },
+    {
+      "source": "vite",
+      "release": "v8.2.1",
+      "address": "https://github.com/vitejs/vite/releases/tag/v8.2.1",
+      "published": "2026-08-06T13:44:35Z",
+      "check_buildable": false,
+      "excerpt": "Please refer to [CHANGELOG.md](https://github.com/vitejs/vite/blob/v8.2.1/packages/vite/CHANGELOG.md) for details."
+    },
+    {
+      "source": "vite",
+      "release": "plugin-legacy@8.2.3",
+      "address": "https://github.com/vitejs/vite/releases/tag/plugin-legacy%408.2.3",
+      "published": "2026-08-06T13:44:50Z",
+      "check_buildable": false,
+      "excerpt": "Please refer to [CHANGELOG.md](https://github.com/vitejs/vite/blob/plugin-legacy@8.2.3/packages/plugin-legacy/CHANGELOG.md) for details."
     }
   ]
 }

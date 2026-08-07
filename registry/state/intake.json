@@ -1,5 +1,5 @@
 {
-  "снято": "2026-08-06T06:47:33+00:00",
+  "снято": "2026-08-07T05:51:55+00:00",
   "окно_суток": 1,
   "советов_просмотрено": 0,
   "зависимостей_паспорта": 0,
@@ -105,19 +105,19 @@
     },
     {
       "source": "vite",
-      "release": "v8.2.0",
-      "address": "https://github.com/vitejs/vite/releases/tag/v8.2.0",
-      "published": "2026-07-30T12:00:47Z",
+      "release": "v8.2.1",
+      "address": "https://github.com/vitejs/vite/releases/tag/v8.2.1",
+      "published": "2026-08-06T13:44:35Z",
       "check_buildable": false,
-      "excerpt": "Please refer to [CHANGELOG.md](https://github.com/vitejs/vite/blob/v8.2.0/packages/vite/CHANGELOG.md) for details."
+      "excerpt": "Please refer to [CHANGELOG.md](https://github.com/vitejs/vite/blob/v8.2.1/packages/vite/CHANGELOG.md) for details."
     },
     {
       "source": "vite",
-      "release": "create-vite@9.1.2",
-      "address": "https://github.com/vitejs/vite/releases/tag/create-vite%409.1.2",
-      "published": "2026-07-30T12:03:27Z",
+      "release": "plugin-legacy@8.2.3",
+      "address": "https://github.com/vitejs/vite/releases/tag/plugin-legacy%408.2.3",
+      "published": "2026-08-06T13:44:50Z",
       "check_buildable": false,
-      "excerpt": "Please refer to [CHANGELOG.md](https://github.com/vitejs/vite/blob/create-vite@9.1.2/packages/create-vite/CHANGELOG.md) for details."
+      "excerpt": "Please refer to [CHANGELOG.md](https://github.com/vitejs/vite/blob/plugin-legacy@8.2.3/packages/plugin-legacy/CHANGELOG.md) for details."
     },
     {
       "source": "react",
