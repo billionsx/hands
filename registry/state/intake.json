@@ -1,5 +1,5 @@
 {
-  "снято": "2026-08-07T05:51:55+00:00",
+  "снято": "2026-08-08T05:10:48+00:00",
   "окно_суток": 1,
   "советов_просмотрено": 0,
   "зависимостей_паспорта": 0,
@@ -7,6 +7,14 @@
   "osv_пакетов_с_записями": 0,
   "расхождение_источников": "🕳 osv недоступен",
   "кандидаты_в_законы": [
+    {
+      "source": "eslint",
+      "release": "v10.8.1",
+      "address": "https://github.com/eslint/eslint/releases/tag/v10.8.1",
+      "published": "2026-08-07T20:16:24Z",
+      "check_buildable": false,
+      "excerpt": "## Bug Fixes\n* [`18eb0a7`](https://github.com/eslint/eslint/commit/18eb0a7e787b9fac3049ef3dad0e845d2bd940a4) fix: prevent ASI hazard in `no-unused-labels` autofix (#21173) (dongkyu lee)\n* [`151ba3f`](https://github.com/eslint/eslint/commit/151ba3f5834a0909e8b9b1736f4889ac694c0104) fix: false positives in `getter-return` and `accessor-pairs` (#21163) (Grit)\n* [`6898df9`](https://github.com/eslint/eslint/commit/6898df9364639ee64b9448a4cb6b08a30c16bd37) fix: ignore meta-property names in `id-denylist` (#21166) (Pixel)\n* [`4d7db66`](https://github.com/eslint/eslint/commit/4d7db6628e2badf0857cb8873"
+    },
     {
       "source": "eslint",
       "release": "v10.8.0",
@@ -22,14 +30,6 @@
       "published": "2026-07-10T21:22:56Z",
       "check_buildable": false,
       "excerpt": "## Features\n* [`cf2a9bf`](https://github.com/eslint/eslint/commit/cf2a9bf2d982642f760370c15f1196f4658f4e27) feat: add errorClassNames option to preserve-caught-error rule (#21032) (sethamus)\n* [`f8b873a`](https://github.com/eslint/eslint/commit/f8b873aae53610b80b5c1005606716e05ed3b91f) feat: max-nested-callbacks option for constructor callbacks (#21063) (fnx)\n* [`557fde8`](https://github.com/eslint/eslint/commit/557fde8bc633d26ea4fe287d4483f287e8e6080f) feat: support computed `Number.parseInt` member access in `radix` rule (#21041) (Pixel)\n* [`0b4a73b`](https://github.com/eslint/eslint/commit/"
-    },
-    {
-      "source": "eslint",
-      "release": "v9.39.5",
-      "address": "https://github.com/eslint/eslint/releases/tag/v9.39.5",
-      "published": "2026-07-10T20:41:58Z",
-      "check_buildable": false,
-      "excerpt": "## Bug Fixes\n* [`253be16`](https://github.com/eslint/eslint/commit/253be16a79a4c78eec4e0eb461b574d60dbf6b11) fix: handle unavailable require cache (backport of #20812 to v9.x) (#21065) (Eric)\n\n## Documentation\n* [`74930ed`](https://github.com/eslint/eslint/commit/74930edd1ce0d246819edc72705101ec271da50b) docs: switch build to Node.js 24 (#20894) (Milos Djermanovic)\n* [`eaec8bb`](https://github.com/eslint/eslint/commit/eaec8bb6b1ca4b36985ee0222c457d4730d47a20) docs: Add ESLint v9.x EOL notice (#20828) (Milos Djermanovic)\n\n## Chores\n* [`458205f`](https://github.com/eslint/eslint/commit/458205f7d"
     },
     {
       "source": "typescript-eslint",
