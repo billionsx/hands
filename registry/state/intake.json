@@ -1,5 +1,5 @@
 {
-  "снято": "2026-08-10T05:45:54+00:00",
+  "снято": "2026-08-11T05:29:48+00:00",
   "окно_суток": 1,
   "советов_просмотрено": 0,
   "зависимостей_паспорта": 0,
@@ -33,6 +33,14 @@
     },
     {
       "source": "typescript-eslint",
+      "release": "v8.67.0",
+      "address": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.67.0",
+      "published": "2026-08-10T17:18:26Z",
+      "check_buildable": false,
+      "excerpt": "## 8.67.0 (2026-08-10)\r\n\r\n### 🚀 Features\r\n\r\n- **typescript-eslint:** export basic globs for using tseslint ([#12105](https://github.com/typescript-eslint/typescript-eslint/pull/12105))\r\n\r\n### ❤️ Thank You\r\n\r\n- Evyatar Daud @StyleShit\r\n- Josh Goldberg ✨\r\n- Kirk Waiblinger @kirkwaiblinger\r\n\r\nSee [GitHub Releases](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.67.0) for more information.\r\n\r\nYou can read about our [versioning strategy](https://typescript-eslint.io/users/versioning) and [releases](https://typescript-eslint.io/users/releases) on our website."
+    },
+    {
+      "source": "typescript-eslint",
       "release": "v8.66.0",
       "address": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.66.0",
       "published": "2026-08-03T17:34:06Z",
@@ -46,14 +54,6 @@
       "published": "2026-07-20T17:38:21Z",
       "check_buildable": false,
       "excerpt": "## 8.65.0 (2026-07-20)\n\n### 🚀 Features\n\n- add warning when TS 7 is detected ([#12529](https://github.com/typescript-eslint/typescript-eslint/pull/12529))\n- **eslint-plugin:** [no-restricted-imports] deprecate extension rule ([#12527](https://github.com/typescript-eslint/typescript-eslint/pull/12527), [#19562](https://github.com/typescript-eslint/typescript-eslint/issues/19562), [#11889](https://github.com/typescript-eslint/typescript-eslint/issues/11889))\n- **eslint-plugin:** [no-shadow] specialized error on enum declaration and member shadowing ([#12578](https://github.com/typescript-eslint/t"
-    },
-    {
-      "source": "typescript-eslint",
-      "release": "v8.64.0",
-      "address": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.64.0",
-      "published": "2026-07-13T17:38:19Z",
-      "check_buildable": false,
-      "excerpt": "## 8.64.0 (2026-07-13)\n\n### 🚀 Features\n\n- support parsing `import defer` ([#12513](https://github.com/typescript-eslint/typescript-eslint/pull/12513))\n- **eslint-plugin:** [no-loop-func] support `using` / `await using` declarations and deprecate the rule ([#12500](https://github.com/typescript-eslint/typescript-eslint/pull/12500))\n- **typescript-estree:** throw for invalid definite assignment in class properties ([#12543](https://github.com/typescript-eslint/typescript-eslint/pull/12543))\n\n### 🩹 Fixes\n\n- **eslint-plugin:** [require-array-sort-compare] handle constrained arrays ([#12512](https:"
     },
     {
       "source": "openssf-scorecard",

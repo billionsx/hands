@@ -159,6 +159,14 @@
       "published": "2026-08-07T20:16:24Z",
       "check_buildable": false,
       "excerpt": "## Bug Fixes\n* [`18eb0a7`](https://github.com/eslint/eslint/commit/18eb0a7e787b9fac3049ef3dad0e845d2bd940a4) fix: prevent ASI hazard in `no-unused-labels` autofix (#21173) (dongkyu lee)\n* [`151ba3f`](https://github.com/eslint/eslint/commit/151ba3f5834a0909e8b9b1736f4889ac694c0104) fix: false positives in `getter-return` and `accessor-pairs` (#21163) (Grit)\n* [`6898df9`](https://github.com/eslint/eslint/commit/6898df9364639ee64b9448a4cb6b08a30c16bd37) fix: ignore meta-property names in `id-denylist` (#21166) (Pixel)\n* [`4d7db66`](https://github.com/eslint/eslint/commit/4d7db6628e2badf0857cb8873"
+    },
+    {
+      "source": "typescript-eslint",
+      "release": "v8.67.0",
+      "address": "https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.67.0",
+      "published": "2026-08-10T17:18:26Z",
+      "check_buildable": false,
+      "excerpt": "## 8.67.0 (2026-08-10)\r\n\r\n### 🚀 Features\r\n\r\n- **typescript-eslint:** export basic globs for using tseslint ([#12105](https://github.com/typescript-eslint/typescript-eslint/pull/12105))\r\n\r\n### ❤️ Thank You\r\n\r\n- Evyatar Daud @StyleShit\r\n- Josh Goldberg ✨\r\n- Kirk Waiblinger @kirkwaiblinger\r\n\r\nSee [GitHub Releases](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v8.67.0) for more information.\r\n\r\nYou can read about our [versioning strategy](https://typescript-eslint.io/users/versioning) and [releases](https://typescript-eslint.io/users/releases) on our website."
     }
   ]
 }
