@@ -1,5 +1,5 @@
 {
-  "снято": "2026-08-13T05:50:24+00:00",
+  "снято": "2026-08-14T05:48:15+00:00",
   "окно_суток": 1,
   "советов_просмотрено": 0,
   "зависимостей_паспорта": 0,
@@ -73,19 +73,19 @@
     },
     {
       "source": "semgrep",
+      "release": "v1.173.0",
+      "address": "https://github.com/semgrep/semgrep/releases/tag/v1.173.0",
+      "published": "2026-08-13T16:49:55Z",
+      "check_buildable": false,
+      "excerpt": "## [1.173.0](https://github.com/semgrep/semgrep/releases/tag/v1.173.0) - 2026-08-12\n\n### ### Added\n\n- `semgrep-core -version` now reports the git commit that the binary was built\n  from. (core-version-git-sha)\n- Pro: Added a `no_disk_cache` memory policy (`--x-mem-policy no_disk_cache`) to trade higher memory usage for not caching intermediary scan data structures on disk. (no-disk-cache-memory-policy)\n\n### ### Changed\n\n- File targeting now submits path-filtering work to worker domains in batches\n  removing multithreaded synchronization overhead for very large repos. (ENGINE-2854)\n- Parallel r"
+    },
+    {
+      "source": "semgrep",
       "release": "v1.172.0",
       "address": "https://github.com/semgrep/semgrep/releases/tag/v1.172.0",
       "published": "2026-07-28T22:40:28Z",
       "check_buildable": false,
       "excerpt": "## [1.172.0](https://github.com/semgrep/semgrep/releases/tag/v1.172.0) - 2026-07-28\n\n### ### Added\n\n- Added support for the OpenTofu `.tofu` file extension. Because OpenTofu uses the same HCL grammar as Terraform, `.tofu` files are now automatically detected and scanned as Terraform, so they are picked up by recursive scans and Terraform rulesets (e.g. `p/terraform`) with no extra configuration. (ENGINE-2884)\n\n### ### Changed\n\n- Updated the Ruby parser to tree-sitter-ruby v0.23.1, improving support for `!=`, case/when expressions with line breaks, and element references that take a block. (LAN"
-    },
-    {
-      "source": "semgrep",
-      "release": "v1.171.0",
-      "address": "https://github.com/semgrep/semgrep/releases/tag/v1.171.0",
-      "published": "2026-07-22T23:05:43Z",
-      "check_buildable": false,
-      "excerpt": "## [1.171.0](https://github.com/semgrep/semgrep/releases/tag/v1.171.0) - 2026-07-22\n\n### ### Added\n\n- Added support for the OpenTofu `.tofu` file extension. Because OpenTofu uses the same HCL grammar as Terraform, `.tofu` files are now automatically detected and scanned as Terraform, so they are picked up by recursive scans and Terraform rulesets (e.g. `p/terraform`) with no extra configuration. (ENGINE-2884)\n\n### ### Changed\n\n- The window for collecting git contributor information during `semgrep ci` has been extended from the last 30 days to the last 90 days, to match the updated usage polic"
     },
     {
       "source": "typescript",
